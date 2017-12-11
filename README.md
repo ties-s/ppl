@@ -3,7 +3,9 @@
 In `npm@>=5` packages linked via `npm link` are lost if `npm install` is called, this package tries to fix that. 
 
 ## Installation
-`npm install -g ppl`
+```bash
+npm install -g ppl
+```
 
 ## Usage
 ### Link current package
@@ -16,14 +18,14 @@ same as original `npm link`
 
 
 ### Link package
-```javascript
+```bash
 ppl link <package>
 ```
 internally adds the package name to `package-links.json` and calls `npm link <package>`
 
 
 ### Link all saved packages
-```
+```bash
 ppl link-file
 ```
 Links all packages stored in the `package-links.json` file.
