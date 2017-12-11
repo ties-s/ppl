@@ -6,21 +6,21 @@ In `npm@>=5` packages linked via `npm link` are lost if `npm install` is called,
 `npm install -g ppl`
 
 ## Usage
-#### Link current package
+### Link current package
 ```
 ppl link // or npm link (these are equivalent)
 ```
 same as original `npm link`
 
 
-#### Link
+### Link package
 ```
 ppl link <package>
 ```
 internally adds the package name to `package-links.json` and calls `npm link <package>`
 
 
-#### Link all saved packages
+### Link all saved packages
 ```
 ppl link-file
 ```
