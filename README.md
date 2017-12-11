@@ -7,14 +7,16 @@ In `npm@>=5` packages linked via `npm link` are lost if `npm install` is called,
 
 ## Usage
 ### Link current package
-```
-ppl link // or npm link (these are equivalent)
+```bash
+ppl link 
+# or (these are equivalent)
+npm link
 ```
 same as original `npm link`
 
 
 ### Link package
-```
+```javascript
 ppl link <package>
 ```
 internally adds the package name to `package-links.json` and calls `npm link <package>`
